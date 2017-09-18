@@ -1,0 +1,25 @@
+<!-- <ngx-gallery [options]="jobOptions" [images]="jobImages"></ngx-gallery> -->
+
+<!-- <div> -->
+    <!-- <button (click)="goBack()">Back</button> -->
+<!--    <a (click)="goBack()" class="btn btn-rabbit back"> <i class="fa fa-angle-left" aria-hidden="true"></i>Back</a>
+</div> -->
+
+<bootstrap-grid>
+    <container>
+      <row>
+        <!-- <column sm="6" mdPush="3" mdPull="3"> -->
+        <!-- <column sm="6"> -->
+        <column sm="6" smPush="3" smPull="3">
+            <ngx-gallery [options]="jobOptions" [images]="jobImages"></ngx-gallery>
+        </column>
+      </row>
+
+      <row>
+        <!-- <column sm="6"> -->
+        <column sm="6" smPush="3" smPull="3">
+            <a (click)="goBack()" class="btn btn-rabbit back"> <i class="fa fa-angle-left" aria-hidden="true"></i> Back</a>
+        </column>
+      </row>
+    </container>
+</bootstrap-grid>

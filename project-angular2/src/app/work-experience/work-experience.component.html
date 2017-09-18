@@ -1,0 +1,22 @@
+<div class="demo-grid-list">
+
+  <!-- style="width: calculateSize($event)" -->
+  <md-card class="gridListdemoBasicUsage">
+    <!-- <md-card-title>Grid list with header</md-card-title> -->
+    <md-card-content>
+      <md-grid-list cols="{{numColumn}}">
+        <md-grid-tile *ngFor="let job of jobList" [routerLink]="['/job', job.id]" class="containerGridTile">
+          <md-grid-tile-header>
+            <h3 md-line><b>{{job.time}}</b></h3>
+            <h4 md-line>{{job.title}}</h4>
+          </md-grid-tile-header>
+          <img [alt]="job.time" src="assets/images/company/{{job.company}}" class="imagePng">
+          <div class="overlay">
+            <!-- <div class="text">Working in XXX as a software developer YYYY</div> -->
+          </div>
+        </md-grid-tile>
+      </md-grid-list>
+    </md-card-content>
+  </md-card>
+
+</div> <!-- End demo-grid-list -->

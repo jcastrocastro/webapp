@@ -1,0 +1,25 @@
+.btn-rabbit{
+    background-color: #fff;
+    color: #111;
+    font-style: italic;
+    border: 1px solid #111;
+    border-radius: 0px !important;
+    transition: all 0.4s ease-in-out;
+    margin-bottom: 20px;
+    font-family: "Crimson";
+    font-size: 13px;
+}
+
+.btn-rabbit:hover{
+    color: #fff;
+    background-color: #bb9e7d;
+    border-color: #bb9e7d;
+}
+
+.btn{
+    padding: 10px 60px;    
+    height: 145px;  
+    font-size: 16px;
+    position: relative;
+    top: 20px;
+}
